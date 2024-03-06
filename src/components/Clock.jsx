@@ -3,7 +3,7 @@ import "./../App.css";
 export default function Clock ({clock, hours}) {
   clock = clock.split(":", 4);
   console.log(clock);
-  clock.hours = Number(clock[0])+Number(hours);
+  clock.hours = Number(clock[0])+Number(hours)-2;
   clock.minutes = clock[1];
   clock[2] = clock[2].split(" ", 2);
   clock.seconds = clock[2][0];
