@@ -4,7 +4,7 @@ import Clock from "./components/Clock";
 import moment from "moment-timezone";
 //import dataForm from "./../data.json";
 function App() {
-   const [dataList, setList] = useState([]);
+  const [dataList, setList] = useState([]);
   const [data, setData] = useState({
     date: new Date().toLocaleDateString(),
     traveled: 0,
@@ -59,12 +59,12 @@ function App() {
   // eslint-disable-next-line no-unused-vars
   const [time, setTime] = useState(Date.now());
 
-useEffect(() => {
-  const interval = setInterval(() => setTime(Date.now()), 1000);
-  return () => {
-    clearInterval(interval);
-  };
-}, []);
+  useEffect(() => {
+    const interval = setInterval(() => setTime(Date.now()), 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <div className="wrapper">
