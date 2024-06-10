@@ -56,6 +56,7 @@ function App() {
 
   const clock = moment().format("LTS").toString(); //new Date().toLocaleTimeString();
   console.log(clock);
+  // eslint-disable-next-line no-unused-vars
   const [time, setTime] = useState(Date.now());
 
 useEffect(() => {
